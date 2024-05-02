@@ -1,0 +1,10 @@
+Headings,Sub Headings,Code
+Fedora,,sudo dnf install python3-pip python3-wheel
+CentOS/RHEL,,sudo dnf install python3-pip python3-wheel
+openSUSE,,sudo dnf install python3-pip python3-wheel
+Debian/Ubuntu and derivatives,,sudo dnf upgrade python3-setuptools
+Arch Linux,,sudo yum install python34u python34u-wheel
+,,sudo zypper install python3-pip python3-setuptools python3-wheel
+,,"sudo apt update
+sudo apt install python3-venv python3-pip"
+,,sudo pacman -S python-pip

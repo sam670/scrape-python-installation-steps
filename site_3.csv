@@ -1,0 +1,45 @@
+Headings,Sub Headings,Code
+,,"python3 -m pip install --user pipx
+python3 -m pipx ensurepath"
+,,"$ pipx install PACKAGE
+$ PACKAGE_APPLICATION [ARGS]"
+,,"$ pipx install cowsay
+  installed package cowsay 6.1, installed using Python 3.12.2
+  These apps are now globally available
+    - cowsay
+done! ✨ 🌟 ✨
+$ cowsay -t moo
+  ___
+< moo >
+  ===
+        \
+         \
+           ^__^
+           (oo)\_______
+           (__)\       )\/
+               ||     ||
+               ||----w |"
+,,"$ pipx list
+venvs are in /Users/user/Library/Application Support/pipx/venvs
+apps are exposed on your $PATH at /Users/user/.local/bin
+manual pages are exposed at /Users/user/.local/share/man
+   package black 24.2.0, installed using Python 3.12.2
+    - black
+    - blackd
+   package cowsay 6.1, installed using Python 3.12.2
+    - cowsay
+   package mypy 1.9.0, installed using Python 3.12.2
+    - dmypy
+    - mypy
+    - mypyc
+    - stubgen
+    - stubtest
+   package nox 2024.3.2, installed using Python 3.12.2
+    - nox
+    - tox-to-nox"
+,,"pipx upgrade PACKAGE
+pipx uninstall PACKAGE"
+,,"python3 -m pip install --upgrade pipx
+python3 -m pip uninstall pipx"
+,,pipx run cowsay -t moooo
+,,pipx --help

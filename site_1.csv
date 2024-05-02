@@ -1,0 +1,54 @@
+Headings,Sub Headings,Code
+Create and Use Virtual Environments,Create a new virtual environment,python3 -m venv .venv
+Prepare pip,Activate a virtual environment,
+Install packages using pip,Deactivate a virtual environment,source .venv/bin/activate
+Upgrading packages,Reactivate a virtual environment,
+Using a requirements file,Install a package,which python
+Freezing dependencies,Install a specific package version,
+,Install extras,.venv/bin/python
+,Install a package from source,
+,Install from version control systems,deactivate
+,Install from local archives,"python3 -m pip install --upgrade pip
+python3 -m pip --version"
+,Install from other package indexes,pip 23.3.1 from .../.venv/lib/python3.9/site-packages (python 3.9)
+,,python3 -m pip install requests
+,,"Collecting requests
+  Using cached requests-2.18.4-py2.py3-none-any.whl
+Collecting chardet<3.1.0,>=3.0.2 (from requests)
+  Using cached chardet-3.0.4-py2.py3-none-any.whl
+Collecting urllib3<1.23,>=1.21.1 (from requests)
+  Using cached urllib3-1.22-py2.py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests)
+  Using cached certifi-2017.7.27.1-py2.py3-none-any.whl
+Collecting idna<2.7,>=2.5 (from requests)
+  Using cached idna-2.6-py2.py3-none-any.whl
+Installing collected packages: chardet, urllib3, certifi, idna, requests
+Successfully installed certifi-2017.7.27.1 chardet-3.0.4 idna-2.6 requests-2.18.4 urllib3-1.22"
+,,python3 -m pip install 'requests==2.18.4'
+,,"python3 -m pip install 'requests>=2.0.0,<3.0.0'"
+,,python3 -m pip install --pre requests
+,,python3 -m pip install 'requests[security]'
+,,"cd google-auth
+python3 -m pip install ."
+,,python3 -m pip install --editable .
+,,google-auth @ git+https://github.com/GoogleCloudPlatform/google-auth-library-python.git
+,,python3 -m pip install requests-2.18.4.tar.gz
+,,python3 -m pip install --no-index --find-links=/local/dir/ requests
+,,python3 -m pip install --index-url http://index.example.com/simple/ SomeProject
+,,python3 -m pip install --extra-index-url http://index.example.com/simple/ SomeProject
+,,python3 -m pip install --upgrade requests
+,,"requests==2.18.4
+google-auth==1.1.0"
+,,python3 -m pip install -r requirements.txt
+,,python3 -m pip freeze
+,,"cachetools==2.0.1
+certifi==2017.7.27.1
+chardet==3.0.4
+google-auth==1.1.1
+idna==2.6
+pyasn1==0.3.6
+pyasn1-modules==0.1.4
+requests==2.18.4
+rsa==3.4.2
+six==1.11.0
+urllib3==1.22"
